@@ -1,0 +1,31 @@
+{
+  "name": "cucumber-testrail-reporter",
+  "version": "1.0.0",
+  "description": "A Testrail reporter for cucumber framework which will update the test results to testrail.",
+  "main": "cucumber-testrail-reporter.ts",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:KeyValueSoftwareSystems/wdio-cucumber-testrail-reporter.git"
+  },
+  "keywords": [
+    "spec",
+    "testrail",
+    "reporter",
+    "cucumber"
+  ],
+  "author": "Shawn Sam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KeyValueSoftwareSystems/wdio-cucumber-testrail-reporter/issues"
+  },
+  "homepage": "https://github.com/KeyValueSoftwareSystems/wdio-cucumber-testrail-reporter#readme",
+  "dependencies": {
+    "@cucumber/messages": "^24.0.1",
+    "axios": "^1.4.0",
+    "moment": "^2.29.4"
+  }
+}
