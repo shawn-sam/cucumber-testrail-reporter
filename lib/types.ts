@@ -34,3 +34,11 @@ export type Results = {
   results: TestResult[]
 }
 export type getCaseIdFrom = 'tags' | 'title'
+
+export type Pickle = {
+  name: string,
+  tags: { name: string }[];
+};
+export type Result = {
+  status?: string
+}

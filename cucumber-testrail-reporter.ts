@@ -1,8 +1,9 @@
 import testRail from "./lib/testrail";
-import { Cases, TestRailConfig, TestRailOptions, getCaseIdFrom } from "./lib/types";
+import { Pickle, Result, Cases, TestRailConfig, TestRailOptions, getCaseIdFrom } from "./lib/types";
 import { getCasesFromTestRailJson, writeCasesToTestRailJson } from "./lib/json-handler"
-import { Pickle, TestStepResult } from "@cucumber/messages";
+// import { Pickle, TestStepResult } from "@cucumber/messages";
 import testRailApis from "./lib/testRail-apis"
+
 
 /**
 * This is a custom reporter for playwright-cucumber framework which will update the test results to testrail.
@@ -48,7 +49,7 @@ class CucumberTestRailReporter {
             writeCasesToTestRailJson(this.jsonLocation, {})
         }
     }
-    afterScenario = async (pickle: Pickle, result: TestStepResult | undefined) => {
+    afterScenario = async (pickle: Pickle , result: Result | undefined) => {
         const tags = pickle.tags.map((tag) => { return tag.name })
         const scenarioName = pickle.name
 
