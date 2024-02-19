@@ -25,7 +25,9 @@
   "homepage": "https://github.com/KeyValueSoftwareSystems/wdio-cucumber-testrail-reporter#readme",
   "dependencies": {
     "@cucumber/messages": "^24.0.1",
+    "@types/node": "^20.11.19",
     "axios": "^1.4.0",
-    "moment": "^2.29.4"
+    "moment": "^2.29.4",
+    "ts-node": "^10.9.2"
   }
 }
